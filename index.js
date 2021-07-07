@@ -8,6 +8,21 @@ function handleClick(e) {
 }
 
 /* End Given Code, don't edit above here...*/
+function greet(hour){
+  const converted_time = parseInt(hour)
+  if (converted_time < 12) {
+    return "Good Morning";
+  } 
+  else if (converted_time > 12 && converted_time <= 17){ 
+    return "Good Afternoon";
+  } 
+  else {
+    return "Good Evening";
+  }
+} 
 
-/* Write your implementation of greet() */
-/* Write your implementation of displayMessage() */
+function displayMessage(msg){
+ document.getElementById("greeting").innerText = msg ;
+}
+
+// 
